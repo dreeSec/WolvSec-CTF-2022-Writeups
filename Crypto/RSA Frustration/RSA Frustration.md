@@ -60,7 +60,7 @@ We need all p and q values of the Ns. This can take a long time to generate sinc
 We are given the encrypted ciphertext after 27 encryptions, so we have to start by using the largest N's p and q values and the nth root algorithm to get possible p and q roots. We use the chinese remainder theorem with the p and q roots to give us possbible candidite decryptions, for which there will be e^2 of (12769 in this case). 
 
 **Step 3:**
-We are then going to have to construct an algorithm to keep recursing through the possible candidite decryptions, using the correct p and q values based on the depth of the recursion. A depth first search (DFS) is most useful here to get the flag quicker. Using [OPz qt's DFS Sage Script](https://github.com/christheyankee) we can get the flag!
+We are then going to have to construct an algorithm to keep recursing through the possible candidite decryptions, using the correct p and q values based on the depth of the recursion. A depth first search (DFS) is most useful here to get the flag quicker. Using [OPz qt's](https://github.com/christheyankee) DFS Sage Script we can get the flag!
 
 ```
 from Crypto.Util.number import long_to_bytes
