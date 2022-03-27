@@ -93,7 +93,7 @@ flag: `wsc{s4g3m4th_i5_5up3r_co0l!}`
 
 
 ***The Optimization:***
-The above solution was able to find the flag, however, we can make this even faster. Since the encryption added 9 more bits to the minimum size p and q could be `bitLength = ((len(bin(numToEncrypt)) - 2) // 2) + 9`, this means we don't have to DFS through 12769 candidate decryptions each time but actually just a couple or even sometimes 1!. The algorithm below gets all candidate decryptions, and only chooses the top one for ciphers > 400 bits, top 5 for ciphers > 350 bits and top 10 for the rest. This will save about a minute's time (on my machine) when trying to find the flag.
+The above solution was able to find the flag, however, we can make this even faster. Since the encryption added 9 more bits to the minimum size p and q could be `bitLength = ((len(bin(numToEncrypt)) - 2) // 2) + 9`, this means we don't have to DFS through 12769 candidate decryptions each time but actually just a couple or even sometimes 1! The algorithm below gets all candidate decryptions, and only chooses the top one for ciphers > 400 bits, top 5 for ciphers > 350 bits and top 10 for the rest. This will save about a minute's time (on my machine) when trying to find the flag.
 
 
 ```
