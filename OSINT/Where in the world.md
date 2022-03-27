@@ -1,7 +1,7 @@
 ## Challenge Name: Where in the world?
 Category: **OSINT**  
 Difficulty: **Medium**  
-Points: **476**  
+Points: **486**  
 Solves: **39**
 
 Challenge Description: 
