@@ -1,7 +1,8 @@
 ## Challenge Name: <ANYTHING>
 Category: **Crypto**  
+Difficulty: **Easy**  
 Points: **100**  
-Solves: **234**
+Solves: **241**
 
 Challenge Description: 
 This could be encrypted with ANYTHING!
