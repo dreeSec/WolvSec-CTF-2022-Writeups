@@ -8,14 +8,52 @@ Challenge Description:
 My friend encrypted the flag but realized they can’t decrypt it. Frustrated, they decided to keep encrypting the flag hoping this will somehow fix it. How are we going to recover it now? An efficent solution would probably be useful here.
 
 ### Files
+```
+from Crypto.Util.number import getPrime, bytes_to_long, long_to_bytes
 
+def encrypt(numToEncrypt):
+    def getPrimeCustom(bitLength, e):
+        while True:
+            i = getPrime(bitLength)
+            if (i-1) % e**2 == 0:
+                return i
 
-[RSA_Frustration_-_output (2).txt](https://github.com/drewd314/WolvSec-CTF-2022-Writeups/files/8358502/RSA_Frustration_-_output.2.txt)
+    global e
+    global C
+    bitLength = ((len(bin(numToEncrypt)) - 2) // 2) + 9
+    e = 113
+    p = getPrimeCustom(bitLength, e)
+    q = getPrimeCustom(bitLength, e)
+    N = p * q
+    print(f"N = {N}")
+    C = pow(numToEncrypt, e, N)
+    return C
+
+msg = b"wsc{????????????????????}"
+numToEncrypt = bytes_to_long(msg)
+
+# maybe if I keep encrypting it will fix itself???
+# surely it won't make it worse
+encryptedNum = encrypt(numToEncrypt)
+for x in range(26):
+    encryptedNum = encrypt(encryptedNum)
+  
+print(f"e = {e}")
+print(f"C = {C}")
+```
+
+[RSA_Frustration output](https://github.com/drewd314/WolvSec-CTF-2022-Writeups/files/8358502/RSA_Frustration_-_output.2.txt)
 
 ### Approach
-This challenge was based off of [Joshua Casper's](https://youtu.be/tU8WbB9vhDg) stegonagraphy idea!
+The idea for this challenge stemmed from [Dice CTF's](https://ctftime.org/writeup/32264) recent RSA challenge!
 
-While listening to the audio file, you can hear the audio has gotten corrupted towards the end of the recording. 
+Based off the description, the person is having trouble decrypting their flag. This means something is broken with the algorithm. We can see that the encryption script is choosing primes that are divisible by the second power of e, meaning phi is not coprime to e!. This will cause a decryption using the inverse mod of the ciphertext to not be useful.
+
+Therefore, we have to use a solution similar to [Dice CTF's](https://ctftime.org/writeup/32264) where we take all cadidite decryptions using the nth_root algorithm in sage.
+
+
+
+#Step 1:
   
 If you run strings on the file, it will output hidden comments:
 ![22103aa00aedae679sss47c30b74cbd204e](https://user-images.githubusercontent.com/74334127/160298238-9769a267-43fc-4d3b-b447-b86baff1a6d6.png)
