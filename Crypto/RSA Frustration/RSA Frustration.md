@@ -139,21 +139,9 @@ def factorize(p,q,N,depth,cip):
 if __name__ == "__main__":
     factorize(p_list[len(p_list) - 1], q_list[len(q_list)-1], N_list[len(q_list)-1], 0, cipher)
 ```
-We need all p and q values of the Ns. This can take a long time to generate since the largest N is 199 digits long. To accommodate for this, I uploaded the factors to [FactorDB](http://factordb.com/). An algorithm that fetches the primes from factor DB can be used, r 
-  
-If you run strings on the file, it will output hidden comments:
-![22103aa00aedae679sss47c30b74cbd204e](https://user-images.githubusercontent.com/74334127/160298238-9769a267-43fc-4d3b-b447-b86baff1a6d6.png)
-
-This is hinting that you will need to view this as a raw file in photoshop. This is also hinted in the description with RAW being capitalized. To convert it to a raw file, change the file extention from ".wav" to ".raw". Then, when trying to open the file in photoshop you are preseneted with the following options:
-
-  ![](https://user-images.githubusercontent.com/74334127/160299927-56c70db3-7c64-43a4-8dfc-5995f85c8c30.png)
-  
-From the hint, we are given that the channels should be set to 1 and the depth should be set to 8 bits. These are also the default settings, so the hint was not necessarily needed.
-
-![](https://user-images.githubusercontent.com/74334127/160300025-81b7ec95-da86-4057-9c78-16071a1c5808.jpg)
-flag: `wsc{wsc{s4g3m4th_i5_5up3r_co0l!}`
-  
 ### Note
-At least one team was able to do this without the use of photoshop, and just online tools. Will add this method to the writeup soon!
 
+The initital idea was to make the optimization needed to find the flag, however this would likely lead to people with very great computing power to be able to still use the sole DFS algorithm without the e optimization. Therefore, the optimization is just a bonus idea. It is most useful when trying to replicate the results of the challenge. Sage remembers factors, so when running the scripts a second time the non-optimized one takes a minute whereas the optimized one takes 5 seconds on my machine. Maybe someone could force this optimization in a challenge of their own!
+
+Will add more mathmatical explinations for this algorithm soon!
 
