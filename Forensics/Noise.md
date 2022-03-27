@@ -1,4 +1,4 @@
-## Challenge Name: <Noise>
+## Challenge Name: Noise>
 Category: **Forensics**  
 Difficulty: **Medium**  
 Points: **498**  
