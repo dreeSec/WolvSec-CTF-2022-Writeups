@@ -16,18 +16,17 @@ Vividpineconepig appears to be the name of some unique user. The description tel
 ![4a990ad3409eb161cf8d7d681c8cb059](https://user-images.githubusercontent.com/74334127/160300607-3fa23b1d-c2e0-4b6a-a7f1-bfe2a1a642ac.png)
 ![bb194a9bc9ae06c57d4c5cdd9dd74af2](https://user-images.githubusercontent.com/74334127/160300608-b105ea2f-2ec8-4cc2-8fbd-c1cd84cfe07b.png)
 
-  
-If you run strings on the file, it will output hidden comments:
-![22103aa00aedae679sss47c30b74cbd204e](https://user-images.githubusercontent.com/74334127/160298238-9769a267-43fc-4d3b-b447-b86baff1a6d6.png)
+One might initially think that we are going to need to brute force search the location, but we can actually narrow down this location using the two main clues in the picture. After doing research, one would find that the **Adopt a Highway sign** on the right is exclusive to the state on Montana. The other major clue is the **Mile 280** mile marker. Since we know the state is Montana, one might find this Montana's DOT Mile Marker map to be useful. There are now very little locations you would have to check on programs such as google maps.
 
-This is hinting that you will need to view this as a raw file in photoshop. This is also hinted in the description with RAW being capitalized. To convert it to a raw file, change the file extention from ".wav" to ".raw". Then, when trying to open the file in photoshop you are preseneted with the following options:
+Once we find that the town is **Shelby, MT**, the next step is finding the streetname. From the picture, we might consider this elevated street over the traintracks to be the street the description is referring to.
+![0b6851dca58be6533e87c436a5b62138](https://user-images.githubusercontent.com/74334127/160300873-44b07ed0-90d0-4625-980f-46f04c6f0760.png)
 
-  ![](https://user-images.githubusercontent.com/74334127/160299927-56c70db3-7c64-43a4-8dfc-5995f85c8c30.png)
-  
-From the hint, we are given that the channels should be set to 1 and the depth should be set to 8 bits. These are also the default settings, so the hint was not necessarily needed.
+Looking on google maps, we can find the most updated street name (NOTE: If you check on google street view, it will give you an older name of the street, which is incorrect):
+![5feec298809d5e60a58cc5be5e6f6af1](https://user-images.githubusercontent.com/74334127/160300930-e5316625-b4e5-4842-83f3-49c357f0e7ad.png)
 
-![](https://user-images.githubusercontent.com/74334127/160300025-81b7ec95-da86-4057-9c78-16071a1c5808.jpg)
-flag: `wsc{t0t4lly_w1ck3d_dud3}`
+Here, we can see the street is Oilfield Ave.
+
+flag: `wsc{OILFIELD}`
   
 ### Note
 At least one team was able to do this without the use of photoshop, and just online tools. Will add this method to the writeup soon!
