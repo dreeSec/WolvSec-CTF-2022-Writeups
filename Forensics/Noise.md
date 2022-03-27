@@ -22,7 +22,9 @@ This is hinting that you will need to view this as a raw file in photoshop. This
 From the hint, we are given that the channels should be set to 1 and the depth should be set to 8 bits. These are also the default settings, so the hint was not necessarily needed.
 
 ![](https://user-images.githubusercontent.com/74334127/160300025-81b7ec95-da86-4057-9c78-16071a1c5808.jpg)
-
+flag: `wsc{t0t4lly_w1ck3d_dud3}`
   
+### Note
+At 
 
-flag: `wsc{vigenere_not_bad}`
+
