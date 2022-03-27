@@ -25,6 +25,6 @@ From the hint, we are given that the channels should be set to 1 and the depth s
 flag: `wsc{t0t4lly_w1ck3d_dud3}`
   
 ### Note
-At 
+At least one team was able to do this without the use of photoshop, and just online tools. Will add this method to the writeup soon!
 
 
