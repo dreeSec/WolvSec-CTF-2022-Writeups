@@ -53,7 +53,16 @@ Therefore, we have to use a solution similar to [Dice CTF's](https://ctftime.org
 
 
 
-#Step 1:
+**Step 1:**
+
+
+
+***The Optimization:***
+
+
+
+```
+We need all p and q values of the Ns. This can take a long time to generate since the largest N is 199 digits long. To accommodate for this, I uploaded the factors to [FactorDB](http://factordb.com/). An algorithm that fetches the primes from factor DB can be used, r 
   
 If you run strings on the file, it will output hidden comments:
 ![22103aa00aedae679sss47c30b74cbd204e](https://user-images.githubusercontent.com/74334127/160298238-9769a267-43fc-4d3b-b447-b86baff1a6d6.png)
