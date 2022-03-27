@@ -28,8 +28,6 @@ Looking on google maps, we can find the most updated street name (NOTE: If you c
 Here, we can see the street is Oilfield Ave.
 
 flag: `wsc{OILFIELD}`
-  
-### Note
-At least one team was able to do this without the use of photoshop, and just online tools. Will add this method to the writeup soon!
+
 
 
