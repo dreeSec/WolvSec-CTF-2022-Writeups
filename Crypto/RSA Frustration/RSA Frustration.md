@@ -139,7 +139,7 @@ def factorize(p,q,N,depth,cip):
 if __name__ == "__main__":
     factorize(p_list[len(p_list) - 1], q_list[len(q_list)-1], N_list[len(q_list)-1], 0, cipher)
 ```
-### Note
+### Notes
 
 The initial idea was to make the optimization needed to find the flag, however this would likely lead to people with very great computing power to be able to still use the sole DFS algorithm without the e optimization. Therefore, the optimization is just a bonus idea. It is most useful when trying to replicate the results of the challenge. Sage remembers factors, so when running the scripts a second time the non-optimized one takes a minute whereas the optimized one takes 5 seconds on my machine. Maybe someone could force this optimization in a challenge of their own! If 10 bits were added instead of 9 then we would not even need a DFS, and could do it linear with the smallest candidate decryption each time. However, the idea for this challenge was to incorporate a DFS but to be able to use the optimization as assistance.
 
