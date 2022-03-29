@@ -29,7 +29,7 @@ Here, we can see the street is Oilfield Ave.
 
 flag: `wsc{OILFIELD}`
 
-Shoutout the [USA Geoguessr community](https://discord.gg/wx7CUMAxJQ)! would not have all adopt a highway signs memorized without them :)
+Shoutout to the [USA Geoguessr community](https://discord.gg/wx7CUMAxJQ)! would not have all adopt a highway signs memorized without them :)
 
 
 
