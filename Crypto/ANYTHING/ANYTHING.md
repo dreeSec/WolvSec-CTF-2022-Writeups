@@ -1,4 +1,4 @@
-## Challenge Name: <ANYTHING>
+## Challenge Name: ANYTHING
 Category: **Crypto**  
 Difficulty: **Easy**  
 Points: **100**  
